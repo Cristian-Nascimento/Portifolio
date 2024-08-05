@@ -106,7 +106,7 @@ span {
 .home-content p {
     font-size: 1.8rem;
     font-weight: 700;
-    width: 1000px
+    width: 1000px;
 }
 
 .social-icons a {
@@ -234,13 +234,13 @@ span {
 }
 
 .projects {
-    background: #b3c9f1;
-    color: black;
+    background: var(--second-bg-color);
+    color: rgb(255, 255, 255);
 }
 
 .projects h2 {
     margin-bottom: 5rem;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .projects-container {
@@ -251,7 +251,6 @@ span {
 }
 
 .projects-box {
-    border: 3px solid var(--main-color);
     height: 100%;
     border-radius: 15px;
     cursor: pointer;
@@ -289,7 +288,7 @@ span {
     object-fit: cover;
 }
 
-.footer{
+.footer {
     position: relative;
     bottom: 0;
     width: 100%;
@@ -305,65 +304,14 @@ span {
     color: white;
 }
 
-.hard-skills {
-    padding: 5rem 9%;
-    background: #0059ff;
-    color: white;
-}
-
-.skills-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.skill i {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-}
-
-.skills-container, .technologies-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 4rem;
-}
-
-.skill, .technology {
-    text-align: center;
-    width: 200px;
-    color: white;
-}
-
-.skill i, .technology i {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: rgb(0, 0, 0);
-}
-
-.skill .description .technology{
-    font-size: 1.4rem;
-    color: #ffffff;
-}
-
-.description{
+.description {
     padding: 3%;
 }
 
-.description-icon{
+.description-icon {
     font-size: 2rem;
     font-weight: 550;
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
 
 .letter {
@@ -372,40 +320,160 @@ span {
     text-align: center;
 }
 
-@media(max-width: 1285px){
-    html{
+.hard-skills {
+    padding: 8rem 9%;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.hard-skills .heading {
+    font-size: 3.5rem;
+    color: var(--main-color);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.hard-skills .letter {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.hard-skills .skills-container,
+.hard-skills .technologies-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hard-skills .skill,
+.hard-skills .technology {
+    flex-basis: 30%;
+    background: var(--second-bg-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 4rem;
+}
+
+.hard-skills .skill i,
+.hard-skills .technology i {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.hard-skills .skill .description-icon,
+.hard-skills .technology .description-icon {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.hard-skills .skill .description,
+.hard-skills .technology .description {
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.soft-skills {
+    padding: 8rem 9%;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.soft-skills .heading {
+    font-size: 3.5rem;
+    color: var(--main-color);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.soft-skills .letter {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.soft-skills .technologies-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.soft-skills .technology {
+    flex-basis: 30%;
+    background: var(--second-bg-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 4rem;
+}
+
+.soft-skills .technology i {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.soft-skills .technology .description-icon {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.soft-skills .technology .description {
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+
+@media(max-width: 1285px) {
+    html {
         font-size: 55%;
     }
-    .projects-container{
+
+    .projects-container {
         padding-bottom: 7rem;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         margin: 0 5rem;
     }
-    .home p{
+
+    .home p {
         width: 700px;
     }
-    .home img{
+
+    .home img {
         width: 32vw;
     }
 }
 
-@media(max-width: 991px){
-    header{
+@media(max-width: 991px) {
+    header {
         padding: 2rem 3%;
     }
-    section{
+
+    section {
         padding: 10rem 3% 2rem;
     }
-    .footer{
+
+    .footer {
         padding: 2rem 3%;
     }
 }
 
-@media(max-width: 895px){
-    #menu-icon{
+@media(max-width: 895px) {
+    #menu-icon {
         display: block;
     }
-    .navbar{
+
+    .navbar {
         position: absolute;
         top: 100%;
         left: 0;
@@ -415,44 +483,55 @@ span {
         border-bottom: 1px solid rgba(255, 255, 255, 0.4);
         display: none;
     }
-    .navbar.active{
+
+    .navbar.active {
         display: block;
     }
-    .navbar a{
+
+    .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
         color: rgb(0, 0, 0);
     }
-    .home{
+
+    .home {
         flex-direction: column;
         margin: 5rem 4rem;
     }
-    .home p{
+
+    .home p {
         width: 500px;
     }
-    .home-content h3{
+
+    .home-content h3 {
         font-size: 2.6rem;
     }
-    .home-content h1{
+
+    .home-content h1 {
         font-size: 5rem;
     }
-    .about{
+
+    .about {
         flex-direction: column-reverse;
     }
-    .about-content{
+
+    .about-content {
         margin: 0 2rem 4rem;
     }
-    .about img{
+
+    .about img {
         width: 64vw;
         margin-top: 1rem;
         margin-bottom: 3rem;
     }
-    .projects h2{
+
+    .projects h2 {
         margin-bottom: 3rem;
     }
-    .projects-container{
-        grid-template-columns: repeat(1,1fr);
+
+    .projects-container {
+        grid-template-columns: repeat(1, 1fr);
         margin: 0 2rem;
     }
 }
