@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#hard-skills">Hard Skills and Soft Skills</a>
+            <a href="#about">About Me</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="images/fundo branco perfil.png" alt="">
+        </div>
+
+        <div class="home-content">
+            <h3>Hi</h3>
+            <h3 class="text-animation">I'm a <span></span></h3>
+            <p>
+                I have experience in Node.js, Express.js, and MongoDB.
+                I'm also a student of Information Systems at the Minas Gerais State University.
+            </p>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/cristian-rosa-nascimento/" target="_blank"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Cristian-Nascimento" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/cristian._nascimento/" target="_blank"><i
+                        class='bx bxl-instagram'></i></a>
+            </div>
+
+            <a href="#" class="btn">Hire me</a>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+
+        <div class="projects-container">
+            <!-- <div class="projects-box">
+                <div class="projects-info">
+                    <h4>Kanban Board</h4>
+                </div>
+            </div> -->
+            <div class="projects-box">
+                <div class="projects-info">
+                    <h4>Restaurant Reservation System</h4>
+                    <img src="./images/print-reservationTable.png" alt="">
+                </div>
+            </div>
+            <div class="projects-box">
+                <div class="projects-info">
+                    <h4>Personalized Watch</h4>
+                    <img src="./images/print-watch.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hard-skills" id="hard-skills">
+        <h2 class="heading">Hard Skills</h2>
+        <p class="letter">I have developed a diverse set of hard skills through my education and experience, including
+            effective teamwork, proficiency in agile methodologies, and a strong focus on writing clean and maintainable
+            code.</p>
+        <div class="skills-container">
+            <div class="skill">
+                <i class='bx bx-group'></i>
+                <p class="description-icon">Teamwork</p>
+                <p class="description">Working effectively in teams to achieve common goals and complete projects
+                    successfully.</p>
+            </div>
+            <div class="skill">
+                <i class='bx bxs-briefcase'></i>
+                <p class="description-icon">Agile Methodology</p>
+                <p class="description">Using agile methodologies, such as Kanban, to manage projects and improve
+                    workflow efficiency.</p>
+            </div>
+            <div class="skill">
+                <i class='bx bxs-rocket'></i>
+                <p class="description-icon">Proactivity</p>
+                <p class="description">Taking initiative in tasks and projects, ensuring timely and effective completion
+                    of work.</p>
+            </div>
+            <div class="skill">
+                <i class='bx bx-code-block'></i>
+                <p class="description-icon">New Technologies</p>
+                <p class="description">Quickly learning and adapting to new technologies and tools to stay current in
+                    the field.</p>
+            </div>
+            <div class="skill">
+                <i class='bx bxs-pencil'></i>
+                <p class="description-icon">Clean Code</p>
+                <p class="description">Writing clean, well-structured, and maintainable code for long-term project
+                    success.</p>
+            </div>
+            <div class="skill">
+                <i class='bx bxs-check-shield'></i>
+                <p class="description-icon">TDD</p>
+                <p class="description">Implementing TDD to ensure code quality and functionality through automated
+                    testing.</p>
+            </div>
+        </div>
+
+        <h2 class="heading">Soft Skills</h2>
+        <p class="letter">I have hands-on experience with various modern technologies that are essential for full-stack
+            development and cloud services.</p>
+        <div class="technologies-container">
+            <div class="technology">
+                <i class='bx bxl-nodejs'></i>
+                <p class="description-icon">Node.js</p>
+                <p class="description">A JavaScript runtime built on Chrome's V8 engine, used for building scalable
+                    network applications.</p>
+            </div>
+            <div class="technology">
+                <i class='bx bxl-typescript'></i>
+                <p class="description-icon">TypeScript</p>
+                <p class="description">A strongly typed programming language that builds on JavaScript, giving you
+                    better tooling at any scale.</p>
+            </div>
+            <div class="technology">
+                <i class='bx bxl-mongodb'></i>
+                <p class="description-icon">MongoDB</p>
+                <p class="description">A document-oriented NoSQL database used for high volume data storage.</p>
+            </div>
+            <div class="technology">
+                <i class='bx bxl-docker'></i>
+                <p class="description-icon">Docker</p>
+                <p class="description">A set of platform as a service products that use OS-level virtualization to
+                    deliver software in packages called containers.</p>
+            </div>
+            <div class="technology">
+                <i class='bx bxl-aws'></i>
+                <p class="description-icon">AWS</p>
+                <p class="description">Amazon Web Services offers reliable, scalable, and inexpensive cloud computing
+                    services.</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">About Me</h2>
+            <p>
+                I'm a student of Information Systems at the Minas Gerais State University.
+                I have experience in Node.js, Express.js, and MongoDB.
+            </p>
+        </div>
+        <div class="about-img">
+            <img src="images/perfil-corpo.jpg" alt="">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="copyright">
+            &copy; 2024 Cristian Nascimento | All rights reserved.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
