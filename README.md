@@ -37,15 +37,15 @@ Este portfólio é uma aplicação web que apresenta meus projetos e habilidades
 
 A estrutura do projeto é organizada da seguinte forma:
 
-/project-root
-│
-├── /images # Imagens utilizadas no portfólio
-├── /css # Arquivos de estilos CSS
-│ └── style.css # Arquivo principal de estilos
-├── /js # Arquivos JavaScript
-│ └── script.js # Arquivo principal de scripts
-├── index.html # Página principal do portfólio
-└── README.md # Este arquivo de documentação
+- /project-root
+- │
+- ├── /images # Imagens utilizadas no portfólio
+- ├── /css # Arquivos de estilos CSS
+-   └── style.css # Arquivo principal de estilos
+- ├── /js # Arquivos JavaScript
+-   └── script.js # Arquivo principal de scripts
+- ├── index.html # Página principal do portfólio
+- └── README.md # Este arquivo de documentação
 
 
 ### Arquivos Principais
