@@ -172,17 +172,14 @@ span {
 }
 
 @keyframes words {
-
     0%,
     33% {
         content: 'Backend Developer';
     }
-
     34%,
     66% {
         content: 'skateboarder';
     }
-
     67%,
     100% {
         content: 'Future Full Stack Developer';
@@ -236,6 +233,7 @@ span {
 .projects {
     background: var(--second-bg-color);
     color: rgb(255, 255, 255);
+    padding: 8rem 9%;
 }
 
 .projects h2 {
@@ -244,48 +242,99 @@ span {
 }
 
 .projects-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
 }
 
 .projects-box {
-    height: 100%;
+    background: var(--bg-color);
+    color: var(--text-color);
     border-radius: 15px;
-    cursor: pointer;
-    transition: 0.3s ease;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 50%;
+    transition: 0.3s ease;
 }
 
 .projects-box:hover {
     transform: scale(1.02);
 }
 
-.projects-box .projects-info {
+.projects-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 2px solid var(--main-color);
+}
+
+.projects-info {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
+    text-align: left;
+    padding: 2rem;
+    flex: 1;
 }
 
 .projects-info h4 {
-    padding: 1rem;
-    font-size: 35px;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
-.projects-box img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
+.projects-info p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.projects-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.projects-buttons .btn {
+    background: var(--bg-color);
+    color: var(--main-color);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    transition: 0.3s ease;
+}
+
+.projects-buttons .btn:hover {
+    background: var(--main-color-2);
+    color: var(--bg-color);
+}
+
+.buttom {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.buttom button {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--bg-color);
+    background: var(--main-color);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s ease, transform 0.3s ease;
+}
+
+.buttom button:hover {
+    background: var(--main-color-2);
+    transform: scale(1.05);
+}
+
+.buttom button:focus {
+    outline: none;
 }
 
 .footer {
@@ -305,13 +354,13 @@ span {
 }
 
 .description {
-    padding: 3%;
+    padding: 2%;
 }
 
 .description-icon {
     font-size: 2rem;
-    font-weight: 550;
-    color: rgb(0, 0, 0);
+    font-weight: 600;
+    color: rgb(235, 225, 225);
 }
 
 .letter {
@@ -432,7 +481,6 @@ span {
     font-size: 1.6rem;
     color: #fff;
 }
-
 
 @media(max-width: 1285px) {
     html {
